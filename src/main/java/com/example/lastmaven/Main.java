@@ -1,4 +1,4 @@
-package com.example.autocourse;
+package com.example.lastmaven;
 
 public class Main {
     public static void main(String[] args) {
