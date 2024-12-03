@@ -19,7 +19,6 @@ public class BaseClass {
 
     @BeforeMethod
     public void setUpTest() {
-        // Initialize ChromeDriver and configure browser settings
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
@@ -28,7 +27,6 @@ public class BaseClass {
 
     @AfterMethod
     public void tearDownTest() {
-        // Quit the WebDriver instance
         if (driver != null) {
             driver.quit();
         }
@@ -36,10 +34,11 @@ public class BaseClass {
 
     @DataProvider(name = "getUsers")
     public Object[][] getUsers() {
-        // Provide test data for multiple user scenarios
         return new Object[][]{
                 {"igvondeville", "testtest1", "testtest"},       // Login with username
                 {"testtest1@gmail.com", "testtest1234", "testtest@gmail.com"} // Login with email
         };
     }
+
 }
+
