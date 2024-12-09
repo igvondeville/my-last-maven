@@ -3,7 +3,7 @@
 <suite name="Web tests suite" verbose="1" >
     <test name="Profile Tests" >
         <classes>
-            <class name="profilePage.profileTestSuites"></class>
+            <class name="ProfilePage.profileTestSuites"></class>
         </classes>
     </test>
 </suite>
